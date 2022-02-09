@@ -6,6 +6,10 @@ Prompt:
 Notes:
   *  I solved this twice, first using Python string manipulation (which I am much more familiar/comfortable with) and then again using
      bit manipulation (the "correct" way to solve it)
-       -  Not sure if LeetCode's run-times are accurate, however I found that string-manip was reasonably faster than bit-manip.
+       -  Not sure if LeetCode's run-times are accurate, however I found that string-manip was reasonably faster than bit-manip (took half the time).
   *  Doing this with string is really simple in Python.
-       -  
+       -  'if str(x)[::-1] == str(x)' handles all cases except negative numbers. Numbers divisible by 10 (which would end up with a preceding 0) needed another               solution as well, however I think that is more of a LeetCode thing.
+       -  Checking for negative and mod by 10 at the beginning handles the outlying cases
+  *  Bit manipulation is also probably simple to folks that do that sort of thing often, however for me it took a bit to wrap my head around the concept.
+       -  Essentially you slice off one digit at a time using the modulo operator (%), then multiply your reversed number by 10 and add the modulo to it
+       -  This sounds more complicated than it is, but it is a bit of a brain bender at first.
