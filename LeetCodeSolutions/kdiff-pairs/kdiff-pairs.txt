@@ -1,0 +1,13 @@
+Prompt:
+  *  Given an array of integers nums and an integer k, return the number of unique k-diff pairs in the array.
+  *  A k-diff pair is an integer pair (nums[i], nums[j]), where the following are true:
+       -  0 <= i < j < nums.length
+       -  |nums[i] - nums[j]| == k
+  *  Notice that |val| denotes the absolute value of val.
+Notes:
+  *  This prompt is really difficult to understand (at least I thought it was confusing), however this problem is relatively simple.
+       -  Prompt for dummies: Given an array of integers, return the number of *unique* pairs of numbers that when subtracted from each other they == k.
+  *  Used the built-in "counter()" function for the first time here. This was super useful because counter() allows you to create a hashmap of all of the 
+     items in the given array and their frequencies as the key:value pair. Using this we can eliminate non-unique values quickly.
+  *  Instead of worrying about subtracting values from each other, add the vaules to the given 'k' (because subtraction and addition are essentially the same thing)
+       -  This allows us to traverse the data a single time while utilizing the "in" operator to find the matching k-diff number 
