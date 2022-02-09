@@ -1,0 +1,8 @@
+Prompt:
+  *  Given a roman numeral, convert it to an integer.
+  
+Notes:
+  *  I thought this was going to be quite difficult, I ended up needing to watch the first few minutes of a solution video before it "clicked"
+  *  Essentially I treated the roman numerals as a string of numbers to be added together, the only caveat to this is the existance of "IV" or "CM"
+     for 4 or 900. In the case of the aforementioned, I checked if the following number was greater than the current number and if so, subtracted the value
+     as opposed to adding it.
