@@ -1,0 +1,11 @@
+Prompt:
+  *  Given an integer x, return true if x is palindrome integer.
+  *  An integer is a palindrome when it reads the same backward as forward.
+       -  For example, 121 is a palindrome while 123 is not.
+       
+Notes:
+  *  I solved this twice, first using Python string manipulation (which I am much more familiar/comfortable with) and then again using
+     bit manipulation (the "correct" way to solve it)
+       -  Not sure if LeetCode's run-times are accurate, however I found that string-manip was reasonably faster than bit-manip.
+  *  Doing this with string is really simple in Python.
+       -  
