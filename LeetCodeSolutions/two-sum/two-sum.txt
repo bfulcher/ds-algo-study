@@ -1,0 +1,9 @@
+Prompt:
+  *  Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+  *  You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Notes:
+  *  Using a hashmap (Python dict) to store previously processed elements, we can solve this without traversing the input array twice.
+     This saves on time as the data gets larger.
+  *  First time using the "enumerate()" function - handy to track both the iterator and the elements you are iterating over at the same time.
+     I think this is slightly un-clear if you don't write a lot of python and might need explaining in an interview.
