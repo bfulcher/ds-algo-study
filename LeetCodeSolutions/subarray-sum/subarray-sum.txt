@@ -1,0 +1,9 @@
+Prompt:
+  *  Given an array of integers nums and an integer k, return the total number of continuous subarrays whose sum equals to k.
+
+Notes:
+  *  Bruteforce is pretty slow here O(n^2) so we need a way to do more on our loop over the array so that we can keep this in linear time.
+  *  I had to watch an explanation of how this worked, it was not very intuitive to me initially, however I think I've got an understanding now.
+  *  We create a hashmap of all of the sums as the key and the value as the number of times they occur (base case of 0:1 which coveres the implied preceding 0)
+  *  Then we can subtract k from the current sum of the array, if that value is equal to any of the sums we have come across while adding up the array contents,
+     we increment the result counter by the number of times that we have seen that sum.
