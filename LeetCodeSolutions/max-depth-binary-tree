@@ -1,8 +1,0 @@
-Prompt:
-  *  Given the root of a binary tree, return its maximum depth.
-  *  A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-  
-Notes:
-  *  Recursion always kinda bends my brain a bit, however this is a pretty simple example to show recursive depth first search
-  *  The way this works is by setting an if statement to catch the "base" case (in ours it is an empty tree) and then returning
-     1 + the max between the solution for both sides of the tree.
