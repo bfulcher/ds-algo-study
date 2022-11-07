@@ -1,0 +1,13 @@
+Problem:
+ - You are climbing a staircase. It takes n steps to reach the top.
+ - Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+###########################################################
+
+This was my first attempt at a Dynamic Programming problem. At first glance it is easy to come up with a brute force
+solution by iterating over all of the possibilities, however if you look closely this problem is essentially a decision tree. 
+Once you have solved one section of the tree, there is no reason to solve that section a second time. 
+
+In every possibility of this problem, the base case is equal to 1, and the case from n-1 is also 1. In order to determine n-2
+you add n and n-1. The solution takes these two base cases, and then works backwards through the given size of the staircase, adding
+as it goes and then returns the final solution.
